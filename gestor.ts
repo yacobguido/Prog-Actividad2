@@ -35,25 +35,4 @@ export class Gestor{
             const datoALlevar= JSON.stringify(this.depositoDeEquipos);
             const llevar = fs.writeFileSync('./deposito.json', datoALlevar);
     }
-
-    public editar(id: string, array: any, newId?: string, newfechaIns?: any){
-        let pos: number = array.findIndex((elem: { id: string; }) => elem.id === id);
-        if(pos<0){
-            console.log("No se encontro la id")
-        } else {
-        array[pos].id = newId;
-        array[pos].fechaInstalacion = parseInt(newfechaIns);
-        
-        if (array[pos].id === newId) {
-            console.log("Se modifico el id del equipo ", id)
-        } else {
-            console.log("No se pudo modificar el id de el equipo ", id)
-        } 
-        if (array[pos].fechaInstalacion === newfechaIns) {
-            console.log("Se modifico la fecha de instalacion de el equipo ", id)
-        } else {
-            console.log("No se modifico la fecha de instalacion de el equipo ", id)
-        }
-    }
-     }
 }
