@@ -1,18 +1,15 @@
-import { depositoDeEquipos, Equipo } from "./equipo";
+import { Equipo } from "./equipo";
 import { Bomba, Caudal } from "./bomba";
 import { Kit_Mangueras, rosca } from "./kitMangueras";
 import { Gestor } from "./gestor";
+import { combustible, eficiencia, MotorC } from "./motor";
 
 
-
-let bomba = new Bomba(Caudal.A, Caudal.A, "bomba");
- bomba.agregarEquipo(bomba,"bomba", "alta bomba", "3/10/2022", '5/10/2022');
- let bombi = new Bomba(Caudal.A, Caudal.A, "bomba");
- bombi.agregarEquipo(bombi, "bomba", "impecable", "2/2/1995", "12/3/2023");
-let manguera = new Kit_Mangueras(1, 2, rosca.A);
-manguera.agregarEquipo(manguera, "manguera", "alta manguera", "2/5/2022", "1/5/2022");
 let gestor = new Gestor();
-gestor.leerPorId("manguera");
-gestor.eliminar("bomba", depositoDeEquipos)
-gestor.editar("bomba", depositoDeEquipos, "bombita")
-console.log(depositoDeEquipos)
+let bomba = new Bomba(Caudal.A, Caudal.A, "aquasystem", "bomba AS", "buena bomba", "2/2/2023", "" );
+let bomba2 = new Bomba(Caudal.A, Caudal.A, "lusqtof", "bomba L", "buena bomba", "2/2/2023", "" )
+gestor.agregarEquipo(bomba);
+gestor.agregarEquipo(bomba2);
+gestor.editar("bomba AS", gestor.depositoDeEquipos, "bomba aqua system");
+gestor.leerPorId("bomba L");
+gestor.leerPorId("bomba aqua system");
