@@ -1,17 +1,16 @@
-[{
-    "id":"bomba",
-"descripcion":"impecable",
-"fechaFabricacion":"1995-02-02T03:00:00.000Z",
-"fechaInstalacion":"2023-12-03T03:00:00.000Z","caudalEntrada":"2000 Litros/hora",
+[{"id":"bomba AS",
+"descripcion":"buena bomba",
+"fechaFabricacion":"2023-02-02T03:00:00.000Z",
+"fechaInstalacion":null,
+"caudalEntrada":"2000 Litros/hora",
 "caudalSalida":"2000 Litros/hora",
-"fabricante":"bomba"
+"fabricante":"aquasystem"
 },
-{
-    "id":"manguera",
-"descripcion":"alta manguera",
-"fechaFabricacion":"2022-02-05T03:00:00.000Z",
-"fechaInstalacion":"2022-01-05T03:00:00.000Z",
-"elementos":1,
-"medidaPulgadas":2,
-"roscaMaterial":"aluminio"
+{"id":"bomba L",
+"descripcion":"buena bomba",
+"fechaFabricacion":"2023-02-02T03:00:00.000Z",
+"fechaInstalacion":null,
+"caudalEntrada":"2000 Litros/hora",
+"caudalSalida":"2000 Litros/hora",
+"fabricante":"lusqtof"
 }]
