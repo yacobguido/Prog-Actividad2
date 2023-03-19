@@ -4,7 +4,7 @@ const fs = require("fs");
 
  
 export class Equipo{
-    public id: string = " ";
+     id: string = " ";
     private descripcion: string= " ";
     private fechaFabricacion: Date = new Date();
     private fechaInstalacion: Date = new Date()
