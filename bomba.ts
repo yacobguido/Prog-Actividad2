@@ -7,8 +7,8 @@ export class Bomba extends Equipo {
     private caudalSalida: Caudal; 
     private fabricante: string;
    
-    constructor (caudalEntrada: Caudal, caudalSalida: Caudal, fabricante: string){
-        super()
+    constructor (caudalEntrada: Caudal, caudalSalida: Caudal, fabricante: string, id: string, descripcion: string, fechaFabricacion:string, fechaInstalacion: string){
+        super( id, descripcion, fechaFabricacion, fechaInstalacion)
         this.caudalEntrada = caudalEntrada;
         this.caudalSalida = caudalSalida;
         this.fabricante = fabricante;
